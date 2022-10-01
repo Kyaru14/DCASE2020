@@ -1,0 +1,21 @@
+dev_directory : data/dev_data/
+eval_directory : .data/eval_data/
+model_directory: data/net_adjust/
+result_directory: ./result/
+result_file: result_adjust.csv
+
+max_fpr : 0.1
+
+log_mel_spec:
+  n_mels: 128
+  frames: 5
+  n_fft: 1024
+  hop_length: 512
+
+MachineType:
+- fan
+- pump
+- slider
+- ToyCar
+- ToyConveyor
+- valve
